@@ -1,7 +1,7 @@
 #include "Commander.h"
 
-//Serial_ *serial = &Serial;
-HardwareSerial *serial = &Serial1;
+Serial_ *serial = &Serial;
+//HardwareSerial *serial = &Serial1;
 
 Commander commander(serial);
 
