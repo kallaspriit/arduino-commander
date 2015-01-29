@@ -8,7 +8,7 @@
 class Commander {
   
 public:
-  Commander(Serial_ *serial, char startToken = '<', char endToken = '>', char parameterDelimiter = ':', char escapeChar = '\\');
+  Commander(Stream *serial, char startToken = '<', char endToken = '>', char parameterDelimiter = ':', char escapeChar = '\\');
   
   boolean gotCommand();
   void parseCommand(String buffer);
@@ -18,7 +18,7 @@ public:
   int parameterCount;
 
 private:
-  Serial_ *serial;
+  Stream *serial;
   char startToken;
   char endToken;
   char parameterDelimiter;

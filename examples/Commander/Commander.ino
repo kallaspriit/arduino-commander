@@ -1,11 +1,12 @@
 #include "Commander.h"
 
-Serial_ *serial = &Serial;
+//Serial_ *serial = &Serial;
+HardwareSerial *serial = &Serial1;
 
 Commander commander(serial);
 
 void setup() {
-  
+  serial->begin(9600);
 }
 
 void loop() {

@@ -1,6 +1,6 @@
 #include "Commander.h"
 
-Commander::Commander(Serial_ *serial, char startToken, char endToken, char parameterDelimiter, char escapeChar) :
+Commander::Commander(Stream *serial, char startToken, char endToken, char parameterDelimiter, char escapeChar) :
   serial(serial),
   startToken(startToken),
   endToken(endToken),
