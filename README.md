@@ -6,7 +6,7 @@ Arduino Commander
 Parses commands like ```<sum:3:5>``` from the Serial stream into a command with name "sum" with two parameters "3" and "5".
 
 # How to use it
-See the ```examples/Commander/Commander.ino``` file for a complete example but basically just create an instance of the Commander providing pointer to the Serial you're using and in your loop, call gotCommand() which returns true if a new command was received. You can the access the latest command info.
+See the ```examples/Commander/Commander.ino``` file for a complete example but basically just create an instance of the Commander providing pointer to the Serial you're using and in your loop, call gotCommand() which returns true if a new command was received. You can then directly access the latest command info from the commander.
 
 # Example
 ```c++
