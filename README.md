@@ -25,5 +25,8 @@ void loop() {
 void handleCommand(String command, String parameters[], int parameterCount) { ... }
 ```
 
+# Configuring
+By default, the Commander library uses ```<``` and ```>``` as message start and end tokens and ```:``` for parameters delimiter but you can configure these in the constructor of Commander class initiation.
+
 # Licence
 The code snipper is licenced under MIT so basically do whatever you want with it, hope it helps someone :)
